@@ -1,5 +1,6 @@
-## Project "Dionysus"  
-The project "Dionysus" aims at applying theories and practices concerning operation systems to a hybrid kernel in modern C++.  
+## Dionysus-Lite 
+A minimal Unix-like OS kernel with simpler aims than its successor [project-dionysus](https://github.com/SmartPolarBear/project-dionysus)  
+
 
 [![issues](https://img.shields.io/github/issues/SmartPolarBear/project-dionysus)](https://github.com/SmartPolarBear/project-dionysus/issues)
 [![forks](https://img.shields.io/github/forks/SmartPolarBear/project-dionysus)](https://github.com/SmartPolarBear/project-dionysus/fork)
@@ -12,13 +13,12 @@ The project "Dionysus" aims at applying theories and practices concerning operat
 
 #### Environment  
 
-The project is initially built on Debian in WSL2 with: 
+The project is initially built on WSL2 **Debian**  with: 
 
-- clang/ LLVM 13  
+- Clang/ LLVM  
 - CMAKE, 3.19 and above.  
 
-
-**Note:** Other compilers may be competent, but C++20 support for compiler is required, for C++20 features like `std::span` are massively used.  
+**Note:** Compilers used are expected to support C++20 or above for new features used in the code.  
 
 #### Third-party libraries
 
@@ -28,15 +28,14 @@ The project is initially built on Debian in WSL2 with:
 
 ### Features and goals
 
-- Multi-server microkernel
-- Asynchronous API
+- POSIX-compatible
 - Written in modern C++
 
 ## Roadmap  
 
-| Q3 2021                                                                          | Q1 2022                                                                                           | Far Future                         |
-|----------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|------------------------------------|
-| ✅ Basic OS structure <br> 🔄Kernel-mode servers <br> 🔄 Basic userland and shell | ❌ Extended OS features <br> ❌ OS security features <br> ❌ Asynchronous API <br> ❌ Graphic support | ❌ Window system <br> ❌ Accessories |
+| Q2 2022                                                                    | Q4 2022                                        |
+|----------------------------------------------------------------------------|------------------------------------------------|
+| ✅ Code cleanup <br> 🔄 New process design <br> 🔄 Basic userland and shell | ❌ Extended OS features <br>  ❌ Graphic support |
 
 ✅ Supported | 🔄 In progress | ❌ In plan  
 
@@ -64,14 +63,9 @@ Furthermore, you are welcomed to:
 The development of this project mostly refers to, and sometimes borrows some techniques, designs and codes from the following project:  
 - [mit-pdos/xv6-public](https://github.com/mit-pdos/xv6-public)  
 xv6 inspired me to start the project to build a kernel, with which I got knowledge of operation systems. And some of its shortcomings motivated me to create this project. 
-- [Stichting-MINIX-Research-Foundation/minix](https://github.com/Stichting-MINIX-Research-Foundation/minix)    
-A series of papers and the book about the development of minix 3 not only let me know about what is microkernel and how it works but also have a deep influence on the goal and development of this project.
-
-- [vsrinivas/fuchsia](https://github.com/vsrinivas/fuchsia)  
-Google's new operation system.  
 
 ## License
-Copyright (c) 2021 SmartPolarBear
+Copyright (c) 2022 SmartPolarBear
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
